@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Media Pembelajaran Interaktif IPAS kelas 5 tentang rangka manusia untuk SDN 6 Batuputih.">
+<title>Jelajah Rangka Manusia | MPI IPAS Kelas 5</title>
+<style>
+:root{--navy:#17324d;--blue:#2878b5;--teal:#28b7a5;--yellow:#ffd166;--coral:#ff8066;--cream:#fffaf0;--ink:#203247;--muted:#617386;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+header{background:linear-gradient(125deg,#17324d,#2878b5 70%,#28b7a5);color:white;padding:20px max(5vw,20px) 52px;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:#ffffff12;right:-70px;top:-100px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;position:relative;z-index:1}.brand{font-weight:800;letter-spacing:.4px}.tag{border:1px solid #ffffff70;border-radius:99px;padding:6px 12px;font-size:.85rem}
+.hero{display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:30px;max-width:1120px;margin:42px auto 0;position:relative;z-index:1}
+h1{font-size:clamp(2.1rem,5vw,4rem);line-height:1.05;margin:0 0 18px}.hero p{font-size:1.1rem;max-width:650px;color:#eaf7ff}.hero-art{background:#ffffff16;border:1px solid #ffffff40;border-radius:28px;padding:18px;text-align:center}
+.hero-art svg{width:min(100%,300px);height:auto;max-height:300px}
+.btn{border:0;border-radius:13px;padding:12px 18px;font-weight:800;cursor:pointer;display:inline-block;text-decoration:none;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--yellow);color:var(--navy)}.secondary{background:#e8f7f6;color:#145c62}.darkbtn{background:var(--navy);color:white}
+nav{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(10px);box-shadow:0 4px 18px #17324d12;padding:10px max(4vw,12px);display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+nav a{color:var(--navy);text-decoration:none;padding:8px 12px;border-radius:10px;font-size:.92rem;font-weight:700}nav a:hover{background:#e8f7f6}
+main{max-width:1120px;margin:auto;padding:30px 20px 70px}.section{margin:34px 0 48px;scroll-margin-top:90px}.eyebrow{color:#168f89;font-weight:900;text-transform:uppercase;letter-spacing:1.5px;font-size:.78rem}h2{font-size:clamp(1.65rem,3vw,2.4rem);line-height:1.2;margin:4px 0 12px;color:var(--navy)}.lead{color:var(--muted);max-width:760px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:white;border:1px solid #e4eaf0;border-radius:20px;padding:22px;box-shadow:0 10px 28px #17324d0a}.card .emoji{font-size:2rem}.card h3{margin:8px 0;color:var(--navy)}.card p{margin:0;color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}.panel{background:white;border:1px solid #e4eaf0;border-radius:22px;padding:24px;box-shadow:0 10px 28px #17324d0a}
+.parts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.part{border:1px solid #dce8ef;background:#f7fbfd;border-radius:13px;padding:12px;text-align:left;cursor:pointer;color:var(--ink);font-weight:750}.part:hover,.part.active{background:#def7f2;border-color:var(--teal)}#partInfo{margin-top:14px;background:#fff5d9;border-radius:14px;padding:14px;min-height:90px}
+.quiz-question{padding:17px 0;border-bottom:1px solid #e8edf1}.quiz-question:last-child{border-bottom:0}.quiz-question p{font-weight:800;margin:0 0 10px}.answers{display:grid;gap:8px}.answers label{background:#f7fafc;border:1px solid #e1e8ee;padding:10px 12px;border-radius:11px;cursor:pointer}.answers label:has(input:checked){background:#e5f6f3;border-color:#28b7a5}.answers input{margin-right:8px}
+#result{display:none;margin-top:18px;padding:18px;border-radius:15px;background:#e5f6f3;font-weight:800}.callout{background:#fff2d0;border-left:5px solid var(--yellow);padding:16px 18px;border-radius:0 14px 14px 0}
+.steps{counter-reset:step;display:grid;gap:12px}.step{background:white;border:1px solid #e4eaf0;border-radius:15px;padding:16px 18px}.step:before{counter-increment:step;content:counter(step);display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--blue);color:white;font-weight:900;margin-right:10px}
+footer{background:var(--navy);color:#eaf7ff;padding:28px 20px;text-align:center}footer p{margin:4px}
+.small{font-size:.9rem;color:var(--muted)}.progress{height:8px;background:#dce7ed;border-radius:99px;overflow:hidden;margin:12px 0}.progress span{display:block;width:0;height:100%;background:var(--teal);transition:width .3s}
+@media(max-width:760px){.hero,.two{grid-template-columns:1fr}.hero{margin-top:26px}.hero-art{max-width:340px;margin:auto}.grid{grid-template-columns:1fr}.parts{grid-template-columns:1fr 1fr}.top{align-items:flex-start;flex-direction:column}nav{justify-content:flex-start;overflow:auto;flex-wrap:nowrap}nav a{white-space:nowrap}}
+@media print{nav,.btn,button{display:none!important}body{background:white}.card,.panel{box-shadow:none;break-inside:avoid}}
+</style>
+</head>
+<body>
+<header>
+ <div class="top"><div class="brand">🔬 IPAS • KELAS 5 SD</div><div class="tag">SDN 6 Batuputih · Kolaka Utara</div></div>
+ <div class="hero">
+  <div><div class="eyebrow" style="color:#baf6e9">Ayo belajar sambil menjelajah!</div><h1>Jelajah<br>Rangka Manusia</h1>
+   <p>Kenali bagian rangka, pahami fungsinya, dan uji pengetahuanmu melalui kegiatan interaktif yang seru.</p>
+   <a class="btn primary" href="#jelajah">Mulai Belajar ↓</a>
+  </div>
+  <div class="hero-art" aria-label="Ilustrasi rangka manusia">
+   <svg viewBox="0 0 260 330" role="img" aria-label="Ilustrasi sederhana rangka manusia">
+    <g stroke="#fff2d0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+     <circle cx="130" cy="42" r="27" fill="#fff2d0" stroke-width="4"/><path d="M118 48 Q130 58 142 48 M122 34h1 M138 34h1" stroke="#17324d" stroke-width="3"/>
+     <path d="M130 70V178 M111 83Q130 72 149 83 M111 83L96 120L105 157 M149 83L164 120L155 157"/>
+     <path d="M130 88L108 98L108 142L130 154L152 142L152 98Z" stroke-width="4"/>
+     <path d="M130 178L108 195L105 245L91 292 M130 178L152 195L155 245L169 292"/>
+     <path d="M91 292L78 299 M169 292L182 299 M105 157L91 185 M155 157L169 185"/>
+     <path d="M112 202L148 202 M110 214L150 214 M108 226L152 226 M107 238L153 238" stroke-width="4"/>
+    </g>
+    <g fill="#ffd166"><circle cx="130" cy="42" r="5"/><circle cx="130" cy="110" r="5"/><circle cx="130" cy="178" r="5"/></g>
+   </svg>
+   <div style="font-weight:800">Tubuh kuat, bergerak hebat!</div>
+  </div>
+ </div>
+</header>
+<nav aria-label="Navigasi materi"><a href="#jelajah">Tujuan</a><a href="#fungsi">Fungsi Rangka</a><a href="#bagian">Bagian Rangka</a><a href="#kebiasaan">Jaga Tulang</a><a href="#kuis">Kuis</a></nav>
+<main>
+<section class="section" id="jelajah">
+ <div class="eyebrow">01 · Tujuan belajar</div><h2>Setelah belajar, kamu bisa…</h2><p class="lead">Amati, klik, baca, lalu coba jawab kuis. Belajar tidak harus membosankan!</p>
+ <div class="grid">
+  <article class="card"><div class="emoji">🦴</div><h3>Mengenali</h3><p>Menyebutkan bagian utama rangka manusia: kepala, badan, tangan, dan kaki.</p></article>
+  <article class="card"><div class="emoji">🛡️</div><h3>Menjelaskan</h3><p>Menerangkan fungsi rangka dalam menopang tubuh dan melindungi organ.</p></article>
+  <article class="card"><div class="emoji">💪</div><h3>Menerapkan</h3><p>Memilih kebiasaan sehari-hari yang membantu menjaga kesehatan tulang.</p></article>
+ </div>
+</section>
+<section class="section" id="fungsi">
+ <div class="eyebrow">02 · Materi inti</div><h2>Apa saja fungsi rangka?</h2><p class="lead">Rangka adalah susunan tulang yang membentuk kerangka tubuh. Tulang bekerja bersama otot dan sendi agar kita dapat bergerak.</p>
+ <div class="grid">
+  <article class="card"><div class="emoji">🧍</div><h3>Menopang tubuh</h3><p>Memberi bentuk tubuh dan membantu kita berdiri tegak.</p></article>
+  <article class="card"><div class="emoji">🪖</div><h3>Melindungi organ</h3><p>Tengkorak melindungi otak; tulang rusuk membantu melindungi jantung dan paru-paru.</p></article>
+  <article class="card"><div class="emoji">🏃</div><h3>Membantu bergerak</h3><p>Tulang, sendi, dan otot bekerja sama saat berjalan, menulis, atau berlari.</p></article>
+  <article class="card"><div class="emoji">🩸</div><h3>Membentuk sel darah</h3><p>Sumsum tulang tertentu menghasilkan sel-sel darah.</p></article>
+  <article class="card"><div class="emoji">🧰</div><h3>Menyimpan mineral</h3><p>Tulang menyimpan mineral seperti kalsium dan fosfor.</p></article>
+  <article class="card"><div class="emoji">🌱</div><h3>Mendukung pertumbuhan</h3><p>Tulang tumbuh dan berubah seiring bertambahnya usia.</p></article>
+ </div>
+</section>
+<section class="section" id="bagian">
+ <div class="eyebrow">03 · Jelajah interaktif</div><h2>Klik bagian rangka</h2><p class="lead">Pilih nama bagian di bawah untuk melihat letak dan tugas utamanya.</p>
+ <div class="two">
+  <div class="panel">
+   <div style="text-align:center">
+   <svg viewBox="0 0 240 320" width="100%" style="max-width:260px;height:300px" role="img" aria-label="Diagram sederhana bagian rangka manusia">
+    <g fill="none" stroke="#b8cbd7" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+     <circle cx="120" cy="35" r="24" fill="#fff0c5" stroke="#d4a83e" stroke-width="3"/>
+     <path d="M120 61V166 M99 75L80 118L91 160 M141 75L160 118L149 160 M120 79L101 90V132L120 145L139 132V90Z" stroke-width="6"/>
+     <path d="M120 166L101 186L98 235L84 288 M120 166L139 186L142 235L156 288"/>
+     <path d="M84 288L70 295 M156 288L170 295"/>
+     <path d="M98 100Q120 88 142 100 M99 112Q120 100 141 112 M101 124Q120 112 139 124" stroke-width="4"/>
+    </g>
+    <g fill="#ff8066"><circle cx="120" cy="35" r="7"/><circle cx="120" cy="110" r="7"/><circle cx="120" cy="166" r="7"/><circle cx="87" cy="135" r="6"/><circle cx="153" cy="135" r="6"/></g>
+   </svg><div class="small">Diagram ilustratif untuk membantu memahami letak tulang.</div>
+   </div>
+  </div>
+  <div class="panel"><div class="parts">
+   <button class="part active" data-part="kepala">🧠 Tengkorak</button><button class="part" data-part="badan">🫁 Tulang badan</button>
+   <button class="part" data-part="tangan">✋ Tulang tangan</button><button class="part" data-part="kaki">🦶 Tulang kaki</button>
+  </div><div id="partInfo"><strong>Tengkorak</strong><p>Tulang tengkorak membentuk kepala dan melindungi otak.</p></div>
+  <div class="callout" style="margin-top:14px"><strong>Ingat!</strong> Tulang tidak bekerja sendiri. Otot menarik tulang dan sendi memungkinkan gerakan.</div></div>
+ </div>
+</section>
+<section class="section" id="kebiasaan">
+ <div class="eyebrow">04 · Tantangan sehari-hari</div><h2>Jadilah sahabat tulangmu</h2>
+ <div class="two">
+  <div class="panel"><h3>✅ Kebiasaan baik</h3><ul><li>Makan makanan bergizi, termasuk sumber kalsium seperti susu, ikan tertentu, tahu, dan sayuran hijau.</li><li>Beraktivitas fisik dengan aman setiap hari.</li><li>Duduk dan berdiri dengan postur yang baik.</li><li>Menggunakan perlengkapan keselamatan saat berolahraga atau bersepeda.</li><li>Berjemur secukupnya dengan memperhatikan keamanan sinar matahari.</li></ul></div>
+  <div class="panel"><h3>⚠️ Hindari</h3><ul><li>Membawa tas yang terlalu berat pada satu sisi tubuh.</li><li>Melompat dari tempat tinggi tanpa pengawasan.</li><li>Duduk membungkuk terlalu lama tanpa jeda.</li><li>Bermain kasar yang berisiko mencederai tulang.</li></ul><div class="callout">Jika mengalami cedera atau nyeri berat, segera beri tahu orang dewasa dan mintalah bantuan tenaga kesehatan.</div></div>
+ </div>
+</section>
+<section class="section" id="kuis">
+ <div class="eyebrow">05 · Saatnya mencoba</div><h2>Kuis kilat rangka manusia</h2><p class="lead">Pilih satu jawaban terbaik untuk setiap soal, lalu tekan “Periksa Jawaban”.</p>
+ <div class="panel">
+  <div class="progress"><span id="progressBar"></span></div><div id="progressText" class="small">0 dari 5 soal dijawab</div>
+  <form id="quiz">
+   <div class="quiz-question"><p>1. Apa fungsi utama tengkorak?</p><div class="answers">
+    <label><input type="radio" name="q1" value="a"> Membantu mencerna makanan</label><label><input type="radio" name="q1" value="b"> Melindungi otak</label><label><input type="radio" name="q1" value="c"> Memompa darah</label></div></div>
+   <div class="quiz-question"><p>2. Bagian tubuh yang bekerja bersama tulang untuk menghasilkan gerakan adalah…</p><div class="answers">
+    <label><input type="radio" name="q2" value="a"> Rambut dan kuku</label><label><input type="radio" name="q2" value="b"> Gigi dan kulit</label><label><input type="radio" name="q2" value="c"> Otot dan sendi</label></div></div>
+   <div class="quiz-question"><p>3. Tulang rusuk membantu melindungi…</p><div class="answers">
+    <label><input type="radio" name="q3" value="a"> Jantung dan paru-paru</label><label><input type="radio" name="q3" value="b"> Otak dan mata</label><label><input type="radio" name="q3" value="c"> Telapak kaki</label></div></div>
+   <div class="quiz-question"><p>4. Kebiasaan yang baik untuk menjaga tulang adalah…</p><div class="answers">
+    <label><input type="radio" name="q4" value="a"> Selalu membawa tas di satu sisi</label><label><input type="radio" name="q4" value="b"> Makan bergizi dan aktif bergerak</label><label><input type="radio" name="q4" value="c"> Menghindari semua aktivitas fisik</label></div></div>
+   <div class="quiz-question"><p>5. Rangka membantu tubuh untuk…</p><div class="answers">
+    <label><input type="radio" name="q5" value="a"> Mengubah udara menjadi air</label><label><input type="radio" name="q5" value="b"> Melihat warna</label><label><input type="radio" name="q5" value="c"> Memiliki bentuk dan berdiri tegak</label></div></div>
+   <button class="btn darkbtn" type="submit">Periksa Jawaban</button> <button class="btn secondary" type="button" id="resetQuiz">Ulangi Kuis</button>
+  </form><div id="result" role="status" aria-live="polite"></div>
+ </div>
+</section>
+<section class="section">
+ <div class="eyebrow">06 · Refleksi</div><h2>Sudah menjadi penjelajah tulang?</h2>
+ <div class="callout"><strong>Coba ceritakan kepada temanmu:</strong><ol><li>Sebutkan dua fungsi rangka.</li><li>Bagaimana rangka melindungi organ tubuh?</li><li>Satu kebiasaan apa yang akan kamu lakukan untuk menjaga tulang?</li></ol></div>
+ <p class="small">Disusun untuk pembelajaran IPAS Kelas 5 · SDN 6 Batuputih, Kolaka Utara. Guru: Samsia, S.Pd.</p>
+</section>
+</main>
+<footer><p><strong>Jelajah Rangka Manusia</strong> · MPI IPAS Kelas 5</p><p>Belajar aktif, berpikir kritis, dan jaga kesehatan tulangmu! 🌟</p></footer>
+<script>
+const parts={
+ kepala:{title:"Tengkorak",text:"Tulang tengkorak membentuk kepala dan melindungi otak. Beberapa tulang wajah juga membantu membentuk rongga untuk mata dan hidung."},
+ badan:{title:"Tulang badan",text:"Tulang belakang membantu menopang tubuh. Tulang rusuk dan tulang dada membentuk rongga dada yang membantu melindungi jantung dan paru-paru."},
+ tangan:{title:"Tulang tangan",text:"Tulang lengan, pergelangan, telapak, dan jari bekerja dengan otot serta sendi agar kita dapat meraih, memegang, menulis, dan mengangkat benda."},
+ kaki:{title:"Tulang kaki",text:"Tulang paha, tungkai, pergelangan, telapak, dan jari kaki membantu menopang berat tubuh serta memungkinkan kita berdiri, berjalan, dan berlari."}
+};
+document.querySelectorAll(".part").forEach(btn=>btn.addEventListener("click",()=>{
+ document.querySelectorAll(".part").forEach(b=>b.classList.remove("active"));btn.classList.add("active");
+ const p=parts[btn.dataset.part];document.getElementById("partInfo").innerHTML="<strong>"+p.title+"</strong><p>"+p.text+"</p>";
+}));
+const quiz=document.getElementById("quiz"), names=["q1","q2","q3","q4","q5"], answers={q1:"b",q2:"c",q3:"a",q4:"b",q5:"c"};
+function updateProgress(){const n=names.filter(n=>quiz.querySelector('input[name="'+n+'"]:checked')).length;document.getElementById("progressBar").style.width=(n/5*100)+"%";document.getElementById("progressText").textContent=n+" dari 5 soal dijawab"}
+quiz.addEventListener("change",updateProgress);
+quiz.addEventListener("submit",e=>{e.preventDefault();let score=0;names.forEach(n=>{if(quiz.querySelector('input[name="'+n+'"]:checked')?.value===answers[n])score++});const r=document.getElementById("result");r.style.display="block";let msg=score===5?"Luar biasa! Kamu ahli rangka manusia! 🌟":score>=3?"Bagus! Baca kembali bagian yang belum kamu kuasai, lalu coba lagi. 💪":"Tetap semangat! Pelajari materi di atas dan ulangi kuis. 🌱";r.innerHTML="Nilaimu: "+score+" dari 5 ("+(score*20)+"/100).<br>"+msg;r.scrollIntoView({behavior:"smooth",block:"nearest"})});
+document.getElementById("resetQuiz").addEventListener("click",()=>{quiz.reset();document.getElementById("result").style.display="none";updateProgress()});
+</script>
+</body></html>
